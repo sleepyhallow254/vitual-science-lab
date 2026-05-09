@@ -1,0 +1,105 @@
+/* style.css */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:Arial, sans-serif;
+  background:#0b132b;
+  color:white;
+  min-height:100vh;
+}
+
+header{
+  text-align:center;
+  padding:40px 20px;
+}
+
+header h1{
+  font-size:3rem;
+}
+
+.subtitle{
+  margin-top:10px;
+  color:#cbd5e1;
+}
+
+nav{
+  display:flex;
+  justify-content:center;
+  gap:15px;
+  padding:20px;
+  background:#1c2541;
+  flex-wrap:wrap;
+}
+
+button{
+  padding:12px 20px;
+  border:none;
+  border-radius:8px;
+  background:#00c2ff;
+  color:white;
+  cursor:pointer;
+  font-size:16px;
+}
+
+button:hover{
+  background:#007ea7;
+}
+
+.subjects{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:30px;
+  padding:40px;
+}
+
+.card{
+  background:#1c2541;
+  width:300px;
+  border-radius:15px;
+  padding:20px;
+  text-align:center;
+}
+
+.card img{
+  width:120px;
+  height:120px;
+  object-fit:contain;
+  margin-bottom:15px;
+}
+
+.card h2{
+  margin-bottom:10px;
+}
+
+.card p{
+  margin-bottom:15px;
+}
+
+input{
+  padding:10px;
+  width:80%;
+  border:none;
+  border-radius:8px;
+}
+
+.page{
+  display:none;
+  padding:30px;
+}
+
+.active{
+  display:block;
+}
+
+footer{
+  text-align:center;
+  padding:20px;
+  margin-top:40px;
+  background:#1c2541;
+}
