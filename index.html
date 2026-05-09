@@ -1,0 +1,188 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Virtual Science Laboratory</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <header>
+    <h1>Virtual Science Laboratory</h1>
+
+    <p class="subtitle">
+      Interactive Chemistry, Biology and Physics Experiments
+    </p>
+  </header>
+
+  <nav>
+
+    <button onclick="showSection('home')">
+      Home
+    </button>
+
+    <button onclick="showSection('chemistry')">
+      Chemistry
+    </button>
+
+    <button onclick="showSection('biology')">
+      Biology
+    </button>
+
+    <button onclick="showSection('physics')">
+      Physics
+    </button>
+
+  </nav>
+
+  <!-- HOME -->
+
+  <section id="home" class="page active">
+
+    <div class="subjects">
+
+      <div class="card">
+
+        <img src="assets/beaker.png" alt="Chemistry">
+
+        <h2>Chemistry Lab</h2>
+
+        <p>
+          Perform chemical reaction simulations.
+        </p>
+
+        <button onclick="showSection('chemistry')">
+          Open Lab
+        </button>
+
+      </div>
+
+      <div class="card">
+
+        <img src="assets/microscope.png" alt="Biology">
+
+        <h2>Biology Lab</h2>
+
+        <p>
+          Observe plant and animal cells virtually.
+        </p>
+
+        <button onclick="showSection('biology')">
+          Open Lab
+        </button>
+
+      </div>
+
+      <div class="card">
+
+        <img src="assets/voltmeter.png" alt="Physics">
+
+        <h2>Physics Lab</h2>
+
+        <p>
+          Perform electrical and motion experiments.
+        </p>
+
+        <button onclick="showSection('physics')">
+          Open Lab
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CHEMISTRY -->
+
+  <section id="chemistry" class="page">
+
+    <h2>Chemistry Laboratory</h2>
+
+    <div class="card">
+
+      <img src="assets/beaker.png" alt="Beaker">
+
+      <p>
+        Mix Hydrochloric Acid and Sodium Hydroxide
+      </p>
+
+      <button onclick="mixChemicals()">
+        Mix Chemicals
+      </button>
+
+      <p id="chemistry-result"></p>
+
+    </div>
+
+  </section>
+
+  <!-- BIOLOGY -->
+
+  <section id="biology" class="page">
+
+    <h2>Biology Laboratory</h2>
+
+    <div class="card">
+
+      <img src="assets/microscope.png" alt="Microscope">
+
+      <p>
+        Observe a plant cell under the microscope
+      </p>
+
+      <button onclick="observeCell()">
+        Observe Cell
+      </button>
+
+      <p id="biology-result"></p>
+
+    </div>
+
+  </section>
+
+  <!-- PHYSICS -->
+
+  <section id="physics" class="page">
+
+    <h2>Physics Laboratory</h2>
+
+    <div class="card">
+
+      <img src="assets/voltmeter.png" alt="Voltmeter">
+
+      <p>Enter Voltage</p>
+
+      <input type="number" id="voltage">
+
+      <br><br>
+
+      <button onclick="calculateCurrent()">
+        Calculate Current
+      </button>
+
+      <p id="physics-result"></p>
+
+    </div>
+
+  </section>
+
+  <footer>
+    <p>
+      Virtual Science Laboratory | Kenyan Curriculum
+    </p>
+  </footer>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
